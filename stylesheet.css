@@ -1,8 +1,12 @@
 .header {
     padding: 10%;
+    background-color: black;
     }
 .h1{
     color: #FF5E19;
     font-family: 'Berkshire Swash', cursive;
     font-size: 60px;
+}
+.card-color{
+    background-color: black;
 }
