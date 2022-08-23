@@ -10,3 +10,11 @@
 .card-color{
     background-color: black;
 }
+.d {
+    display: flex;
+ 
+}
+.w{
+    width: 7rem;
+    height: 2rem;
+}
