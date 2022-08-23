@@ -75,7 +75,7 @@
                              <div class="card-body text-light text-center">
                                   <h4 class="card-title fw-bolder">Kylian Mbappé</h4>
                                   <p class="card-text text-secondary">36 Goals | 120 Assist</p>
-                                  <button type="button" class="btn btn-primary fs-6 rounded-0">SELECT</button>
+                                  <button type="button" class="btn btn-primary fs-6 rounded-0" onclick="addToCart(this)">SELECT</button>
                              </div>
                              </div>
                           </div>
@@ -90,7 +90,7 @@
                              <div class="card-body text-light text-center">
                                   <h4 class="card-title fw-bolder">Vítor Machado</h4>
                                   <p class="card-text text-secondary">36 Goals | 120 Assist</p>
-                                  <button type="button" class="btn btn-primary fs-6 rounded-0">SELECT</button>
+                                  <button type="button" class="btn btn-primary fs-6 rounded-0" onclick="addToCart(this)">SELECT</button>
                              </div>
                              </div>
                           </div>
@@ -104,7 +104,7 @@
                            <div class="card-body text-light text-center">
                                 <h4 class="card-title fw-bolder">Sergio Ramos</h4>
                                 <p class="card-text text-secondary">36 Goals | 120 Assist</p>
-                                <button type="button" class="btn btn-primary fs-6 rounded-0">SELECT</button>
+                                <button type="button" class="btn btn-primary fs-6 rounded-0" onclick="addToCart(this)">SELECT</button>
                            </div>
                            </div>
                         </div>
@@ -119,7 +119,7 @@
                              <div class="card-body text-light text-center">
                                   <h4 class="card-title fw-bolder">Renato Sanches</h4>
                                   <p class="card-text text-secondary">36 Goals | 120 Assist</p>
-                                  <button type="button" class="btn btn-primary fs-6 rounded-0">SELECT</button>
+                                  <button type="button" class="btn btn-primary fs-6 rounded-0" onclick="addToCart(this)">SELECT</button>
                              </div>
                              </div>
                           </div>
@@ -158,44 +158,43 @@
                                 <h4>Budget</h4>
                                 <diV class="d">
                                 
-                                 <p class="">PerPlayer</p>
-                                <input id="" class="card-color border-light w"  type="text" name=""
+                                 <p class="" >PerPlayer</p>
+                                <input id="per-player" class="card-color border-light w text-light"  type="text" name=""
                                    placeholder="">
                                    </div>
+                                   <!-------------------------------->
 
 
-                                   <button type="button" class="btn btn-primary fs-6 rounded-0">Calculate</button>
+                                   <button id="calculate" type="button" class="btn btn-primary fs-6 rounded-0">Calculate</button>
 
 
                                    <diV class="d">                                
-                                    <p class="">PlayerExpenses</p>
-                                   <input id="" class="card-color border-1 w"  type="text" name=""
-                                      placeholder="">
+                                    <p class="text-light card-color" >Player Expenses :<span id="player-expenses" >  </span> </p>
+                                   
+
                                       </div>
 
 
                                       <diV class="d">
-                                       <p class="">Maneger:</p>
-                                       <input id="" class="ms-2 card-color border-light w"  type="text" name=""
+                                       <p class="">Manager:</p>
+                                       <input id="manager" class=" text-light ms-2 card-color border-light w"  type="text" name=""
                                           placeholder="">
                                           </div>
 
 
                                       <diV class="d">
                                        <p class="">Coach:</p>
-                                       <input id="" class="ms-4 card-color border-light w"  type="text" name=""
+                                       <input id="coach" class="text-light ms-4 card-color border-light w"  type="text" name=""
                                           placeholder="">
                                           </div>
 
 
                                           <!-----****Calculate button-->
-                                          <button type="button" class="btn btn-primary fs-6 rounded-0">Calculate Total</button>
+                                          <button id="calculate-total" type="button" class="btn btn-primary fs-6 rounded-0">Calculate Total</button>
                                           <diV class="d">
 
                                             <diV class="d">                                
-                                              <p class="">Total</p>
-                                             <input id="" class="ms-3 card-color border-1 w"  type="text" name=""
-                                                placeholder="">
+                                              <p class="text-light card-color fw-bold" >Total <span id="total">  </span> </p>
                                                 </div>
 
 
