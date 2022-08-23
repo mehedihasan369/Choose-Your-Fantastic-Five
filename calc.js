@@ -54,35 +54,55 @@ document.getElementById('calculate').addEventListener('click', function(){
     const depositTotalElement = document.getElementById('player-expenses');
     depositTotalElement.innerText =  playerExpenses;
 
-   //////////////***************************** */
+    
 
-   const manager = document.getElementById('manager');
-   const managerString = manager.value;
-   const managerFloat = parseFloat(managerString);
-   /////****************************** */
 
-   const coach = document.getElementById('coach');
-   const coachString = coach.value;
-   const coachFloat = parseFloat(coachString);
+})
+
+//////////////******button2*********************** */
+   
+document.getElementById('calculate-total').addEventListener('click', function(){
+
+
+    ////////////////////////////////////////////////
+
+    const perPlayer = document.getElementById('per-player');
+    const newPlayerString = perPlayer.value;
+    const newPlayerAmount = parseFloat(newPlayerString);
+
+    
+    const playerExpenses = newPlayerAmount * arrayLength;
+
+    // console.log(playerExpenses)
+
+    const depositTotalElement = document.getElementById('player-expenses');
+    depositTotalElement.innerText =  playerExpenses;
+
+    /////////////////////////////////////
 
    
-  document.getElementById('calculate-total').addEventListener('click', function(){
 
-    const total = managerFloat +coachFloat + playerExpenses ;
-
-    //////////////////////////
-    const Total = document.getElementById('total');
-    Total.innerText =  total;
-
-  })
-
-
-   console.log(playerExpenses);
-})
+    const manager = document.getElementById('manager');
+    const managerString = manager.value;
+    const managerFloat = parseFloat(managerString);
+    /////****************************** */
+ 
+    const coach = document.getElementById('coach');
+    const coachString = coach.value;
+    const coachFloat = parseFloat(coachString);
+ 
+ 
+     const total = managerFloat +coachFloat + playerExpenses ;
+ 
+     //////////////////////////
+     const Total = document.getElementById('total');
+     Total.innerText =  total;
+ 
+   })
+ 
 
 
 
 }
-
 
 
