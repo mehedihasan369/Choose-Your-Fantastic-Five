@@ -105,4 +105,3 @@ document.getElementById('calculate-total').addEventListener('click', function(){
 
 }
 
-
